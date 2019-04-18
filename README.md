@@ -4,8 +4,8 @@ code copy from the hibernate dialect getLimitString or LimitHandler.getProcessed
 
 ## Usage  
  ```java
-        //for oracle >= 9
- 		String sql = "SELECT * FROM ANIMAL";
+		//for oracle >= 9
+		String sql = "SELECT * FROM ANIMAL";
 		System.out.println("dataBase: " + Database.ORACLE);
 		Paginator paginator = new Paginator(Database.ORACLE);
 		String resultSql = paginator.paginate(sql, 10);
